@@ -42,6 +42,9 @@ document.getElementById('registrationForm').addEventListener('submit', function(
     
     this.reset();
 });
+if (typeof(Storage) === "undefined") {
+    alert("Local storage is not supported in this browser.");
+}
 
 
 document.addEventListener('DOMContentLoaded', loadEntries);
